@@ -5,7 +5,7 @@ This project presents an enterprise-grade network architecture designed for **XY
 
 The network infrastructure is built to support a 100% growth projection over 5 to 10 years, featuring Variable Length Subnet Masking (VLSM), single-area OSPF routing (Area 0), 802.1Q VLAN segmentation, Per-VLAN Spanning Tree load balancing (Rapid PVST+), edge security hardening, and a complete physical layer structured cabling design (MDF/IDF).
 
-* **Academic Module:** 64NETCD – Routing with OSPF and Configure Switching for VLANs with VLSM (Ngee Ann Polytechnic)
+* **Academic Module:** 64NETCD – Network Cloud Design
 * **Project Team:** Kwan Fai Yew, Leong Yu Feng, Liu An, Desmond Gan
 
 ---
@@ -19,6 +19,8 @@ The network infrastructure is built to support a 100% growth projection over 5 t
 ---
 
 ## Network Architecture & Specifications
+
+![Logical Topology Diagram](./Logical%20Topology%20Diagram.png)
 
 ### 1. Layer 3 Routing & Traffic Flow (OSPF)
 * **Protocol & Area:** OSPF Process ID 50 operating in single Area 0 across all enterprise routers (AR1, AR2, MBR1, RSB1).
@@ -59,6 +61,12 @@ Internal addressing utilizes public Class C address space (`220.0.1.0/24`) subne
 ---
 
 ## Physical Layer Infrastructure (L1 Design)
+
+### Main Building Physical Layout Mock-up
+![Main Building Mock-up Diagram](./Main%20Building%20Mock-up%20Diagram.png)
+
+### Main Building Cabling & Cable Run Abstract
+![Main Building Abstract Diagram](./Main%20Building%20Abstract%20Diagram.png)
 
 * **Structured Cabling Standard:** Category 8.2 Solid-Core Ethernet cables utilized for long-term backbone, Horizontal Cross-Cabling (HCC), and Vertical Cross-Cabling (VCC) between MDF and IDFs. Stranded Cat 8 Ethernet cables used for flexible drop connections from floor outlets to host NICs.
 * **Conduit & Installation:** Raised flooring with PVC conduit piping to shield cabling runs across all 3 floors.
